@@ -1,0 +1,10 @@
+server:
+  port: 1010
+spring:
+  application:
+    name: thinkzhuishu
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${REGISTER_HOST:localhost}:${REGISTER_PORT:8848}
+        namespace: spring-cloud-scaffolding
